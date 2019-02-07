@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout_id"
+    android:orientation="vertical"
+    tools:context="com.example.pljc_pc.percobaan1.MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="16dp">
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="FORM PENDAFTARAN"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Silahkan isi pendaftaran berikit ini"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Nama"
+               android:id="@+id/etNama"/>
+
+           <EditText
+               android:inputType="textMultiLine"
+               android:lines="3"
+               android:gravity="top|left"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Alamat"
+               android:id="@+id/etAlamat" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:text="Kelas"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+               android:id="@+id/etkelas"/>
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/rgkls">
+
+               <RadioButton
+                   android:id="@+id/rdTI"
+                   android:text="Tek. Informatika"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <RadioButton
+                   android:id="@+id/rdkomp"
+                   android:text="Inf. Komputer"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <RadioButton
+                   android:id="@+id/rdadm"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Adm Bisnis"/>
+               </RadioGroup>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Hobi"
+                   android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                   android:id="@+id/ethobi"/>
+
+               <CheckedTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/cbhobi"/>
+
+               <CheckBox
+                   android:text="Musik"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <CheckBox
+                   android:text="Olah Raga"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+               <CheckBox
+                   android:text="Membaca"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="RESET"
+                   android:layout_weight="1"
+                   android:id="@+id/btBatal"/>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Simpan"
+                   android:layout_weight="1"
+                   android:id="@+id/btsimpan"/>
+
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
